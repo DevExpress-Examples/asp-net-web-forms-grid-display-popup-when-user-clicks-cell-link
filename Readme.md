@@ -1,3 +1,11 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Default.aspx](./CS/ShowDetailInPopup/Default.aspx) (VB: [Default.aspx.vb](./VB/ShowDetailInPopup/Default.aspx.vb))
+* [Default.aspx.cs](./CS/ShowDetailInPopup/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/ShowDetailInPopup/Default.aspx.vb))
+* [Orders.aspx](./CS/ShowDetailInPopup/Orders.aspx) (VB: [Orders.aspx](./VB/ShowDetailInPopup/Orders.aspx))
+* [Orders.aspx.cs](./CS/ShowDetailInPopup/Orders.aspx.cs) (VB: [Orders.aspx](./VB/ShowDetailInPopup/Orders.aspx))
+<!-- default file list end -->
 # ASPxGridView - How to display a popup using GridViewDataHyperLinkColumn and its NavigateUrlFormatString property
 
 
