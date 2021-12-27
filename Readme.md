@@ -13,7 +13,7 @@ This example shows how to create a grid that contains hyperlinks in one of its c
 
 ![A popup is displayed by clicking the grid column link](images/grid-with-popup-on-link-click.png)
 
-Call the client-side [SetContentUrl](https://docs.devexpress.com/AspNet/js-ASPxClientPopupControlBase.SetContentUrl(url)) method to embed a web page to be displayed to the popup.
+Call the client-side [SetContentUrl](https://docs.devexpress.com/AspNet/js-ASPxClientPopupControlBase.SetContentUrl(url)) method to embed a web page to be displayed in the popup.
 
 ```aspx
 function ShowDetailPopup(customerID) {
