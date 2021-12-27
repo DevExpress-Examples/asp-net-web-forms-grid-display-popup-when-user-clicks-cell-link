@@ -9,11 +9,11 @@
 **[[Run Online]](https://codecentral.devexpress.com/e2193/)**
 <!-- run online end -->
 
-This example shows how to create a grid that contains hyperlinks in one of its columns. When a user clicks a hyperlink, a sepate popup dialog ([ASPxPopupControl](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxPopupControl)) is shown.
+This example shows how to create a grid that contains hyperlinks in one of its columns. When a user clicks a hyperlink, a separate popup dialog ([ASPxPopupControl](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxPopupControl)) is shown.
 
 ![A popup is displayed by clicking the grid column link](images/grid-with-popup-on-link-click.png)
 
-Call the client-side [SetContentUrl](https://docs.devexpress.com/AspNet/js-ASPxClientPopupControlBase.SetContentUrl(url)) method to embed a separate web page to the popup.
+Call the client-side [SetContentUrl](https://docs.devexpress.com/AspNet/js-ASPxClientPopupControlBase.SetContentUrl(url)) method to embed a web page to be displayed to the popup.
 
 ```aspx
 function ShowDetailPopup(customerID) {
