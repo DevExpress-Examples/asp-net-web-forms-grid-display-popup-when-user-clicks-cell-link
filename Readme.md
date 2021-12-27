@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# Grid View for ASP.NET Web Forms - How to Display a Popup Dialog When a User Click a Link in a Grid Row
+# Grid View for ASP.NET Web Forms - How to Display a Popup Dialog When a User Clicks a Link in a Grid Row
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/e2193/)**
 <!-- run online end -->
