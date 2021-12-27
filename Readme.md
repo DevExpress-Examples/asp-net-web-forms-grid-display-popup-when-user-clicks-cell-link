@@ -9,7 +9,7 @@
 **[[Run Online]](https://codecentral.devexpress.com/e2193/)**
 <!-- run online end -->
 
-This example shows how to create a grid that contains hyperlinks in one of columns. When a user clicks a hyperlink, a sepate popup dialog ([ASPxPopupControl](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxPopupControl)) is shown.
+This example shows how to create a grid that contains hyperlinks in one of its columns. When a user clicks a hyperlink, a sepate popup dialog ([ASPxPopupControl](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxPopupControl)) is shown.
 
 ![A popup is displayed by clicking the grid column link](images/grid-with-popup-on-link-click.png)
 
