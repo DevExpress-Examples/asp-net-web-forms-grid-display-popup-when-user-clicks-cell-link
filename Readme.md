@@ -3,23 +3,49 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E2193)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
 
-* [Default.aspx](./CS/ShowDetailInPopup/Default.aspx) (VB: [Default.aspx](./VB/ShowDetailInPopup/Default.aspx))
-* [Default.aspx.cs](./CS/ShowDetailInPopup/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/ShowDetailInPopup/Default.aspx.vb))
-* [Orders.aspx](./CS/ShowDetailInPopup/Orders.aspx) (VB: [Orders.aspx](./VB/ShowDetailInPopup/Orders.aspx))
-* [Orders.aspx.cs](./CS/ShowDetailInPopup/Orders.aspx.cs) (VB: [Orders.aspx.vb](./VB/ShowDetailInPopup/Orders.aspx.vb))
-<!-- default file list end -->
-# ASPxGridView - How to display a popup using GridViewDataHyperLinkColumn and its NavigateUrlFormatString property
+# Grid View for ASP.NET Web Forms - How to Display a Popup Dialog When a User Clicks a Link in a Grid Row
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/e2193/)**
 <!-- run online end -->
 
+This example shows how to create a grid that contains hyperlinks in one of its columns. When a user clicks a hyperlink, a separate popup dialog ([ASPxPopupControl](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxPopupControl)) is shown.
 
-<p>This example contains a Customers grid with a hyperlink column. When a hyperlink is clicked, a popup window is opened to display detail data - orders - of a given customer. Orders is a separate web page, which is embedded into the <a href="http://documentation.devexpress.com/#AspNet/clsDevExpressWebASPxPopupControlASPxPopupControltopic"><u>ASPxPopupControl</u></a> via the client-side <a href="http://documentation.devexpress.com/#AspNet/DevExpressWebASPxPopupControlScriptsASPxClientPopupControlBase_SetContentUrltopic"><u>SetContentUrl</u></a> method.</p>
-<p><strong>See Also:<br /> </strong><a href="https://www.devexpress.com/Support/Center/p/E2270">How to show ASPxPopupControl by clicking the ASPxHyperLink in the GridViewDataColumns' DataItemTemplate</a><br /> <a href="https://www.devexpress.com/Support/Center/p/E70">How to show detail information in a separate ASPxGridView</a><br /> <a href="https://www.devexpress.com/Support/Center/p/E1285">How to display master-detail tables in two grids on separate tabs of a PageControl</a><br /> <a href="https://www.devexpress.com/Support/Center/p/E55">How to show the ASPxPopupControl</a><br /> <a href="https://www.devexpress.com/Support/Center/p/E20051">How to display detail data within a popup window using ContentUrl (MVC)</a><br /> <a href="https://www.devexpress.com/Support/Center/p/E20052">How to display detail data within a popup window (MVC)</a><u><br /> </u><a href="https://www.devexpress.com/Support/Center/p/E5202">E5202: How to display detail data within a popup window using ASPxPopupControl content elements</a></p>
+![A popup is displayed by clicking the grid column link](images/grid-with-popup-on-link-click.png)
 
-<br/>
+Call the client-side [SetContentUrl](https://docs.devexpress.com/AspNet/js-ASPxClientPopupControlBase.SetContentUrl(url)) method to embed a web page to be displayed in the popup.
+
+```aspx
+function ShowDetailPopup(customerID) {
+    popup.SetContentUrl('Orders.aspx?id=' + customerID);
+    popup.Show();
+}
+<dx:GridViewDataHyperLinkColumn FieldName="CustomerID" 
+                                ReadOnly="True" 
+                                VisibleIndex="0">
+    <PropertiesHyperLinkEdit NavigateUrlFormatString="javascript:ShowDetailPopup('{0}');"
+        Text="Show Orders">
+    </PropertiesHyperLinkEdit>
+</dx:GridViewDataHyperLinkColumn>
+```        
+
+## Files to Look At
+
+* [Default.aspx](./CS/ShowDetailInPopup/Default.aspx) (VB: [Default.aspx](./VB/ShowDetailInPopup/Default.aspx))
+* [Orders.aspx](./CS/ShowDetailInPopup/Orders.aspx) (VB: [Orders.aspx](./VB/ShowDetailInPopup/Orders.aspx))
 
 
+## Documentation
+
+* [ASPxGridView](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView)
+* [ASPxPopupControl](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxPopupControl?p=netframework)
+
+## More Examples
+
+* [How to show popup by clicking a hyperlink in grid column's DataItemTemplate](https://github.com/DevExpress-Examples/how-to-show-popup-by-clicking-a-hyperlink-in-grid-columns-dataitemtemplate-e2270)
+* [How to show detail information in a separate ASPxGridView](https://github.com/DevExpress-Examples/how-to-show-detail-information-in-a-separate-aspxgridview-e70)
+* [How to display master-detail tables in two grids on separate tabs of a PageControl](https://github.com/DevExpress-Examples/how-to-display-master-detail-tables-in-two-grids-on-separate-tabs-of-a-pagecontrol-e1285)
+* [Popup Control for ASP.NET Web Forms - How to show a pop-up window](https://github.com/DevExpress-Examples/web-forms-show-popup-window)
+* [How to display detail data within a popup window using ASPxPopupControl content elements](https://github.com/DevExpress-Examples/how-to-display-detail-data-within-a-popup-window-using-aspxpopupcontrol-content-elements-e5202)
+* [GridView - How to open popup on a hyperlink click (MVC)](https://github.com/DevExpress-Examples/gridview-how-to-open-popup-on-a-hyperlink-click-e20052)
+* [How to display detail data within a popup window using ContentUrl (MVC)](https://github.com/DevExpress-Examples/how-to-display-detail-data-within-a-popup-window-using-contenturl-mvc-e20051)
