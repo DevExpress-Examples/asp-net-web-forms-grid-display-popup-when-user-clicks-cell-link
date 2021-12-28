@@ -12,7 +12,7 @@
 <!-- default file list end -->
 # ASPxGridView - How to display a popup using GridViewDataHyperLinkColumn and its NavigateUrlFormatString property
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e2193/)**
+**[[Run Online]](https://codecentral.devexpress.com/134059455/)**
 <!-- run online end -->
 
 
