@@ -6,7 +6,7 @@
 
 # Grid View for ASP.NET Web Forms - How to Display a Popup Dialog When a User Clicks a Link in a Grid Row
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e2193/)**
+**[[Run Online]](https://codecentral.devexpress.com/134059455/)**
 <!-- run online end -->
 
 This example shows how to create a grid that contains hyperlinks in one of its columns. When a user clicks a hyperlink, a separate popup dialog ([ASPxPopupControl](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxPopupControl)) is shown.
