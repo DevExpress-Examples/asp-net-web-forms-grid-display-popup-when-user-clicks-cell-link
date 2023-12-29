@@ -11,9 +11,6 @@
 * [Orders.aspx.cs](./CS/ShowDetailInPopup/Orders.aspx.cs) (VB: [Orders.aspx.vb](./VB/ShowDetailInPopup/Orders.aspx.vb))
 <!-- default file list end -->
 # ASPxGridView - How to display a popup using GridViewDataHyperLinkColumn and its NavigateUrlFormatString property
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/134059455/)**
-<!-- run online end -->
 
 
 <p>This example contains a Customers grid with a hyperlink column. When a hyperlink is clicked, a popup window is opened to display detail data - orders - of a given customer. Orders is a separate web page, which is embedded into the <a href="http://documentation.devexpress.com/#AspNet/clsDevExpressWebASPxPopupControlASPxPopupControltopic"><u>ASPxPopupControl</u></a> via the client-side <a href="http://documentation.devexpress.com/#AspNet/DevExpressWebASPxPopupControlScriptsASPxClientPopupControlBase_SetContentUrltopic"><u>SetContentUrl</u></a> method.</p>
