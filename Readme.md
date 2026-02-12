@@ -48,7 +48,7 @@ function ShowDetailPopup(customerID) {
 * [GridView - How to open popup on a hyperlink click (MVC)](https://github.com/DevExpress-Examples/gridview-how-to-open-popup-on-a-hyperlink-click-e20052)
 * [How to display detail data within a popup window using ContentUrl (MVC)](https://github.com/DevExpress-Examples/how-to-display-detail-data-within-a-popup-window-using-contenturl-mvc-e20051)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-web-forms-grid-display-popup-when-user-clicks-cell-link&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-web-forms-grid-display-popup-when-user-clicks-cell-link&~~~was_helpful=no)
 
